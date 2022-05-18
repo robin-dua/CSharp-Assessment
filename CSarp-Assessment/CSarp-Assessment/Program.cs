@@ -5,6 +5,7 @@ public class Solution
     public static void Main()
     {
         string UserDecision = string.Empty;
+        try{
         do
         {
             Console.Clear();
@@ -49,6 +50,16 @@ public class Solution
             } while (UserDecision != "YES" && UserDecision != "NO");
 
         } while (UserDecision.ToUpper() != "NO");
+        }
+        catch (System.OverflowException ex)
+        {
+            Console.WriteLine("Please try smaller range of values", ex);
+
+        }
+        catch (Exception)
+        {
+            Console.WriteLine("System down, please try after some time");
+        }
 
     }
 }
