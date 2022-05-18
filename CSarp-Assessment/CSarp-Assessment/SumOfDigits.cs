@@ -12,6 +12,21 @@ namespace CSarp_Assessment
     {
         public void mySum()
         {
+            try{
+               int number;
+               Console.Write("Enter a number: ");
+               number = Convert.ToInt32(Console.ReadLine());
+               Console.WriteLine("The sum of the digits of the number {0} is : {1}", number, SumCal(number));
+            }
+             catch(System.OverflowException ex)
+            {
+                Console.WriteLine("Please try smaller range of values", ex);
+
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("System down, please try after some time");
+            }
             int SumCal(int n)
             {
                 string n1 = Convert.ToString(n);
@@ -20,11 +35,6 @@ namespace CSarp_Assessment
                     sum += Convert.ToInt32(n1.Substring(i, 1));
                 return sum;
             }
-
-            int number;
-            Console.Write("Enter a number: ");
-            number = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("The sum of the digits of the number {0} is : {1}", number, SumCal(number));
         }
     }
 }
