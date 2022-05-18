@@ -37,7 +37,7 @@ public class Solution
                         Console.WriteLine("Your choice {0} is invalid", UserChoice);
                         break;
                 }
-            } while (UserChoice != 1 && UserChoice != 2 && UserChoice != 3 && UserChoice != 4);
+            } while (UserChoice >= 1 && UserChoice <= 4);
             do
             {
                 Console.WriteLine("Do you want to continue:");
