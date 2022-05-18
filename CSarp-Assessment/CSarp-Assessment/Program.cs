@@ -5,11 +5,12 @@ public class Solution
     public static void Main()
     {
         string UserDecision = string.Empty;
-        Console.WriteLine("Please select the choice which program do you want to run:");
-        Console.WriteLine("1.Number Triangle\n 2.Display Multiplication Table\n 3.Pyramid Pattern\n 4.Sum of Digits");
         do
         {
+            Console.Clear();
             int UserChoice;
+            Console.WriteLine("Please select the choice which program do you want to run:");
+            Console.WriteLine("1.Number Triangle\n 2.Display Multiplication Table\n 3.Pyramid Pattern\n 4.Sum of Digits");
             do
             {
                 Console.WriteLine("Please enter your choice:");
