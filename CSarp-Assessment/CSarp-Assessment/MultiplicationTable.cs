@@ -1,4 +1,12 @@
-﻿using System;
+/* Write a program in C# Sharp to display the multiplication table vertically from 1 to n. */
+/* Expected Output :
+Multiplication table of 2 to 4
+2x1 = 2
+2x2 = 4
+2x3 = 6
+2x4 = 8 */
+
+using System;
 
 namespace CSarp_Assessment
 {
