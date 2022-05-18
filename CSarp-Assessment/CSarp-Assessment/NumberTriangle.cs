@@ -1,4 +1,12 @@
-﻿using System;
+/* Write a C# Sharp program that takes a number and a width also a number, as input and then displays a triangle of that width, using that number. */
+/* 666666                                                      
+   66666                                                           
+   6666                                                                  
+   666                                                        
+   66                                                                  
+   6 */
+
+using System;
 
 namespace CSarp_Assessment
 {
